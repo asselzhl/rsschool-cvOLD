@@ -21,3 +21,40 @@ I understand that learning Web development is a lot of work, so I will achieve t
 * VS Code
 ## Code Example 
 
+**Task:**
+
+You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+Array can contain numbers or strings. X can be either.
+Return true if the array contains the value, false if not.
+
+**Solution:**
+```
+const check = (a, x) => {
+  let i = 0;
+  while (i < a.length) {
+    if (a[i] == x) {
+      return true;
+    }
+    i = i + 1;
+  }
+  return false;
+}
+```
+
+## Experience 
+No experience in Web Development
+
+## Education
+2016-2020: Foreign Philogy, KazNU named after al-Farabi
+
+**Courses:**
+* JavaScript Manual on learnjavascript.ru (in progress)
+* RSSchool. JS/Frontend Pre-school (in progress)
+
+## Languages
+
+* Kazakh - native
+* Russian - advanced
+* English - advanced
+* German - intermediate
+
