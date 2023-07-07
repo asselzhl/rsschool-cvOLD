@@ -118,6 +118,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   color: #FFFFFF;
   font-size: 60px;
   margin-bottom: 25px;
+  font-family: Montserrat;
+  line-height: 130%;
 }
 .profile__subtitle { 
   color: #FFFFFF;
@@ -147,6 +149,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   color: #FFFFFF;
   text-align: justify;
   padding: 0px 50px 0px 0px;
+  line-height: 120%;
 } 
 /*----------------------------------CONTACTS----------------------------------*/
 .contacts { 
@@ -165,7 +168,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.35);
   padding: 15px 20px;
-  display: inline-block;
   font-size: 25px;
   color: #FFFFFF;
   display: flex;
@@ -181,4 +183,41 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .contacts__item a {
   color: #FFFFFF;
+}
+/*----------------------------------ABOUT----------------------------------*/
+.about { 
+
+}
+.about__container { 
+  border-radius: 10px;
+  background: #FFF;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about__title { 
+  font-family: Montserrat;
+  font-size: 35px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #545454;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 6px 30px;
+  min-width: 300px;
+  text-align: center;
+}
+.skills__list { 
+  margin-top: 20px;
+}
+.skills__item { 
+  font-size: 30px; 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  display: inline-block;
+  padding: 15px 20px;
+
+}
+.skills__item:not(:last-child) {
+  margin-right: 20px;
 }
