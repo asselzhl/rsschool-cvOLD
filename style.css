@@ -67,19 +67,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 /*----------------------------------HEADER----------------------------------*/
 .header { 
-  min-height: 90px;
+  
 }
 .header__container { 
-
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .navigation { 
-  
 }
 .navigation__list { 
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 30px 0px;
 }
 .navigation__item:not(:last-child) { 
   margin-right: 15px;
@@ -87,4 +89,96 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .navigation__link { 
   color: #FFFFFF;
   font-size: 25px;
+}
+/*----------------------------------PROFILE----------------------------------*/
+.profile { 
+  
+}
+.profile__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  display: flex;
+  padding: 30px;
+  align-items: center;
+}
+.profile__image { 
+  flex: 0 1 50%;
+  margin-right: 30px;
+}
+.profile__image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 120px;
+  display: block;
+}
+.profile__content { 
+  flex: 0 1 50%;
+}
+.profile__title { 
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.profile__subtitle { 
+  color: #FFFFFF;
+  font-size: 30px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.profile__label { 
+  color: #FFFFFF;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.profile__label::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+.profile__description { 
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: justify;
+  padding: 0px 50px 0px 0px;
+} 
+/*----------------------------------CONTACTS----------------------------------*/
+.contacts { 
+
+}
+.contacts__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  display: flex;
+  padding: 30px 30px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.contacts__item { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  padding: 15px 20px;
+  display: inline-block;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.contacts__item img {
+  margin-right: 10px;
+  display: block;
+  max-width: 100%;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+.contacts__item a {
+  color: #FFFFFF;
 }
