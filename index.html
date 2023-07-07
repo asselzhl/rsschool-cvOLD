@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <div class="contacts">
                 <div class="contacts__container _container">
                     <div class="contacts__item">
                         <img src="./assets/icons/mail.png" alt="mail">
@@ -55,7 +55,7 @@
                         Almaty, Kazakhstan
                     </div>
                 </div>
-            </section>
+            </div>
             <section class="about">
                 <div class="about__container _container">
                     <div class="about__skills">
@@ -72,12 +72,13 @@
                     </div>
                     <div class="about__snippet">
                         <h2 class="about__title">Code example</h2>
-                        <code><pre>
+                        <pre>
+                        <code>
                             function towelSort (matrix) {
                                 let result = [];
                                 if (matrix) {
-                                  for (let i = 0; i < matrix.length; i++) {
-                                    for (let j = 0; j < matrix[i].length; j++) {
+                                  for (let i = 0; i &lt; matrix.length; i++) {
+                                    for (let j = 0; j &lt; matrix[i].length; j++) {
                                       let n = matrix[i].length - j - 1;
                                       if (i % 2 == 0) {
                                         result.push(matrix[i][j]);
@@ -90,8 +91,9 @@
                                 }
                                 return result;
                               }
-                            </pre>
+                            
                         </code>
+                    </pre>
                     </div>
                     <div class="about__experience">
                         <h2 class="about__title">Experience</h2>
@@ -131,10 +133,10 @@
             <div class="footer__container _container">
                 <div class="footer__copyright">© 2023 by Assel Zholaushybay</div>
                 <div class="footer__link">
-                    <a class="github__link" href="https://github.com/asselzhl"></a>
+                    <a class="github__link" href="https://github.com/asselzhl"><img src="./assets/icons/githnub.svg" alt="github icon"></a>
                 </div>
                 <div class="footer__link">
-                    <a class="rsschool__link" href="https://rs.school/js/"></a>
+                    <a class="rsschool__link" href="https://rs.school/js/"><img src="./assets/icons/rsschool.svg" alt="rsschool icon"></a>
                 </div>
             </div>
         </footer>

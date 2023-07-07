@@ -223,11 +223,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   margin-right: 20px;
 }
 /*----------------------------------SNIPPET----------------------------------*/
-.about__snippet pre {
-  margin-bottom: 80px;
-}
+
 .about__snippet code {
   font-size: 20px;
+}
+.about__snippet {
+  margin-bottom: 80px;
 }
 /*----------------------------------EXPERIENCE----------------------------------*/
 .experience__text {
@@ -263,9 +264,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 /*----------------------------------FOOTER----------------------------------*/
 .footer { }
-.footer__container { }
-._container { }
-.footer__copyright { }
-.footer__link { }
-.github__link { }
-.rsschool__link { }
+.footer__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright { 
+  font-size: 20px;
+  color: #FFFFFF;
+  flex: 0 1 15%;
+  line-height: 120%;
+  margin-right: 30px;
+}
+.footer__link { 
+  flex: 0 1 10%;
+}
+.footer__link:first-child {
+  margin-right: 30px;
+}
+.github__link img { 
+    max-width: 100%;
+}
+.rsschool__link img { 
+  max-width: 100%;
+}
