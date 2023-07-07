@@ -60,21 +60,83 @@
                 <div class="about__container _container">
                     <div class="about__skills">
                         <h2 class="about__title">Skills</h2>
-                        <ul class="skills__list">
-                            <li class="skills__item">JavaScript</li>
-                            <li class="skills__item">HTML5</li>
-                            <li class="skills__item">CSS3</li>
-                            <li class="skills__item">Sass</li>
-                            <li class="skills__item">BEM</li>
-                            <li class="skills__item">Git</li>
-                            <li class="skills__item">Figma</li>
+                        <ul class="about__list">
+                            <li class="about__item">JavaScript</li>
+                            <li class="about__item">HTML5</li>
+                            <li class="about__item">CSS3</li>
+                            <li class="about__item">Sass</li>
+                            <li class="about__item">BEM</li>
+                            <li class="about__item">Git</li>
+                            <li class="about__item">Figma</li>
+                        </ul>
+                    </div>
+                    <div class="about__snippet">
+                        <h2 class="about__title">Code example</h2>
+                        <code><pre>
+                            function towelSort (matrix) {
+                                let result = [];
+                                if (matrix) {
+                                  for (let i = 0; i < matrix.length; i++) {
+                                    for (let j = 0; j < matrix[i].length; j++) {
+                                      let n = matrix[i].length - j - 1;
+                                      if (i % 2 == 0) {
+                                        result.push(matrix[i][j]);
+                                      } else   {
+                                        result.push(matrix[i][n]);
+                                      }  
+                                  }
+                                }
+                                    return result;
+                                }
+                                return result;
+                              }
+                            </pre>
+                        </code>
+                    </div>
+                    <div class="about__experience">
+                        <h2 class="about__title">Experience</h2>
+                        <p class="experience__text">No experience in Web development</p>
+                    </div>
+                    <div class="about__education">
+                        <h2 class="about__title">Education and courses</h2>
+                        <div class="education__content">
+                            <p class="education__text">2023</p>
+                            <p class="education__text">JavaScript/Frontend Programm</p>
+                            <p class="education__text">RSSchool</p>
+                        </div>
+                        <div class="education__content">
+                            <p class="education__text">2023</p>
+                            <p class="education__text">JavaScript Manual</p>
+                            <p class="education__text">learnjavascript.ru</p>
+                        </div>
+                        <div class="education__content">
+                            <p class="education__text">2016-2023</p>
+                            <p class="education__text">English Language and Literature</p>
+                            <p class="education__text">al-Farabi Kazakh National University</p>
+                        </div>
+                    </div>
+                    <div class="about__languages">
+                        <h2 class="about__title">Languages</h2>
+                        <ul class="about__list">
+                            <li class="about__item">English - Fluent</li>
+                            <li class="about__item">Kazakh - Native</li>
+                            <li class="about__item">Russian - Fluent</li>
+                            
                         </ul>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-
+            <div class="footer__container _container">
+                <div class="footer__copyright">© 2023 by Assel Zholaushybay</div>
+                <div class="footer__link">
+                    <a class="github__link" href="https://github.com/asselzhl"></a>
+                </div>
+                <div class="footer__link">
+                    <a class="rsschool__link" href="https://rs.school/js/"></a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

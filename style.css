@@ -204,20 +204,68 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   display: inline-block;
   color: #FFFFFF;
   padding: 6px 30px;
-  min-width: 300px;
+  min-width: 551px;
   text-align: center;
+  margin-bottom: 40px;
 }
-.skills__list { 
-  margin-top: 20px;
+/*----------------------------------SKILLS----------------------------------*/
+.about__skills { 
+  margin-bottom: 80px;
 }
-.skills__item { 
+.about__item { 
   font-size: 30px; 
   border-radius: 10px;
   background: rgba(196, 196, 196, 0.35);
   display: inline-block;
   padding: 15px 20px;
-
 }
-.skills__item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 20px;
 }
+/*----------------------------------SNIPPET----------------------------------*/
+.about__snippet pre {
+  margin-bottom: 80px;
+}
+.about__snippet code {
+  font-size: 20px;
+}
+/*----------------------------------EXPERIENCE----------------------------------*/
+.experience__text {
+  font-size: 25px;
+  margin-bottom: 80px;
+}
+/*----------------------------------EDUCATION----------------------------------*/
+.about__education { 
+  margin-bottom: 80px;
+}
+.education__content { 
+  display: flex;
+  position: relative;
+}
+.education__content::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #545454;
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+}
+.education__text { 
+  font-size: 25px;
+  line-height: 130%;
+  flex: 0 1 33.333%;
+}
+.education__text:not(:last-child) {
+  margin-right: 60px;
+  margin-bottom: 70px;
+}
+/*----------------------------------FOOTER----------------------------------*/
+.footer { }
+.footer__container { }
+._container { }
+.footer__copyright { }
+.footer__link { }
+.github__link { }
+.rsschool__link { }
