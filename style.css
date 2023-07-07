@@ -207,6 +207,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   min-width: 551px;
   text-align: center;
   margin-bottom: 40px;
+  position: relative;
+}
+.about__title::after {
+  content: "";
+  width: 649px;
+  height: 2px;
+  background-color: #545454;
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 551px;
 }
 /*----------------------------------SKILLS----------------------------------*/
 .about__skills { 
