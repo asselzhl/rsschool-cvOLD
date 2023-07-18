@@ -72,14 +72,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .header__logo { 
   margin-right: 50px;
 }
-.navigation { 
-}
 .navigation__list { 
   display: flex;
   
-}
-.navigation__item { 
-
 }
 .navigation__item:not(:last-child) { 
   margin-right: 30px;
@@ -263,7 +258,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   object-fit: contain;
   display: block;
 }
-.card__list { }
 .list__item { 
   font-size: 20px;
   line-height: 135%;
@@ -285,8 +279,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
   color: #FFFFFF;
   line-height: 120%;
   margin-right: 30px;
-}
-.footer__link { 
 }
 .github__link img { 
     max-width: 100%;
