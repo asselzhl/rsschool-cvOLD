@@ -1,3 +1,285 @@
-body {
-  font-size: 16px;
+/*----------------------------------RESET----------------------------------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+  scroll-behavior: smooth;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+    font-family: Cabin;
+    font-weight: 400;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+/*----------------------------------WRAPPER----------------------------------*/
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, hsla(211, 36%, 46%, 1) 0%, hsla(208, 33%, 21%, 1) 100%);
+
+}
+._container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+} 
+.main {
+    flex: 1 1 auto;
+}
+/*----------------------------------HEADER----------------------------------*/
+.header { 
+  padding: 10px 20px;
+}
+.header__container { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(196, 196, 196, 0.30);
+  border-radius: 10px;
+  padding: 30px;
+}
+.header__logo { 
+  margin-right: 50px;
+}
+.navigation__list { 
+  display: flex;
+  
+}
+.navigation__item:not(:last-child) { 
+  margin-right: 30px;
+}
+.navigation__link { 
+  color: #FFFFFF;
+  font-size: 25px;
+}
+/*----------------------------------PROFILE----------------------------------*/
+.profile { 
+  padding: 10px 20px;
+}
+.profile__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__title { 
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-bottom: 25px;
+  font-family: Montserrat;
+  line-height: 130%;
+}
+.profile__subtitle { 
+  color: #FFFFFF;
+  font-size: 30px;
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  padding: 15px 20px;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.profile__description { 
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: justify;
+  line-height: 120%;
+  padding: 0px 200px;
+} 
+.profile__skills { 
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 130%;
+}
+.skills__item {
+  position: relative;
+  padding-left: 25px;
+}
+.skills__item::before {
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  border-radius: 5px;
+}
+.skills__item:not(:last-child) { 
+  margin-bottom: 20px;
+}
+/*----------------------------------CONTACTS----------------------------------*/
+.contacts { 
+  padding: 10px 20px;
+}
+.contacts__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__item { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  padding: 15px 20px;
+  font-size: 25px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex: 0 1 30%;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__item img {
+  margin-right: 20px;
+  display: block;
+  max-width: 100%;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 30px;
+}
+.contacts__item a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+/*----------------------------------PROJECTS----------------------------------*/
+.projects { 
+  padding: 10px 20px;
+}
+.projects__container { 
+  background: hsla(0, 100%, 100%, 0.8);
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+.projects__title { 
+  background: linear-gradient(180deg, hsla(211, 36%, 46%, 0.9) 0%, hsla(208, 33%, 21%, 0.9) 100%);
+  color: #FFFFFF;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+.projects__cards { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px 50px;
+}
+.card__item { 
+  flex: 0 1 45%;
+  box-shadow: 0 26px 44px -5px hsla(208, 33%, 21%, 1);
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.35);
+  padding: 20px;
+}
+.card__item>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+.card__title { 
+  font-size: 30px;
+  line-height: 135%;
+  display: inline-block;
+}
+.card__link {
+  display: inline-block;
+  position: relative;
+  transition: all 1s ease;
+}
+.card__link div {
+  position: absolute;
+  top: 185px;
+  left: 211px;
+  font-size: 30px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  color: hsla(211, 36%, 46%, 1);
+}
+.card__link:hover.card__link div {
+    opacity: 1;
+    transition: all 1s ease;
+}
+.card__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(196, 196, 196, 0.9);
+  transition: all 1s ease-in-out;
+}
+.card__link:hover::before {
+  height: 100%;
+}
+.card__image { 
+  overflow: hidden;
+  height: 400px;
+}
+.card__image img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+.list__item { 
+  font-size: 20px;
+  line-height: 135%;
+}
+/*----------------------------------FOOTER----------------------------------*/
+.footer { 
+  padding: 10px 20px;
+}
+.footer__container { 
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.30);
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright { 
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 120%;
+  margin-right: 30px;
+}
+.github__link img { 
+    max-width: 100%;
 }
